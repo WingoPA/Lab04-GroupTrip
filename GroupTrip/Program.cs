@@ -2,7 +2,7 @@
 * Name: Peyton Wingo
 * Course CSCI 1250, Section 002
 * Assignment: Lab 04, Group Trip 
-* Date: 9-28-26
+* Date: 10-14-26
 * Description: Rebuilds the trip calculator with methods and arrays so it reports on a whole group instead of one person
 */
 
