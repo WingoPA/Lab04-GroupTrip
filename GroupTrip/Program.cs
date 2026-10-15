@@ -28,9 +28,9 @@ Console.WriteLine("What is the price of gas per gallon?");
 
 Console.WriteLine("");
 
-double gasprice = Convert.ToDouble(Console.ReadLine());
+double gasPrice = Convert.ToDouble(Console.ReadLine());
 
-double fuelcost = FuelCost(MilesForTrip, MilesPerGallon, gasprice);
+double fuelCost = FuelCost(MilesForTrip, MilesPerGallon, gasPrice);
 
 //pizza_party
 
@@ -62,7 +62,7 @@ Console.WriteLine("Pizza cost: " + costPizza.ToString("F2"));
 
 
 
-
+Console.Clear();
 
 
 
@@ -74,10 +74,10 @@ System.Console.WriteLine("=== Part 1: The Trip ===");
 
 Console.WriteLine("");
 
-Console.WriteLine($"Fuel cost: {fuelcost:C}");
+Console.WriteLine($"Fuel cost: {fuelCost:C}");
 Console.WriteLine($"Pizza cost: {costPizza:C}");
 
-double tripTotal = fuelcost + costPizza;
+double tripTotal = fuelCost + costPizza;
 
 Console.WriteLine($"Trip total: {tripTotal:C}");
 
@@ -137,11 +137,11 @@ Console.WriteLine($"Longest anyone must work: {longestHoursToWork:F2}");
 
 // Method 1
 
-static double FuelCost(double MilesForTrip, double MilesPerGallon, double gasprice)
+static double FuelCost(double MilesForTrip, double MilesPerGallon, double gasPrice)
 {
     double gallonsNeeded = MilesForTrip / (double)MilesPerGallon;
-    double fuelcost = gallonsNeeded * gasprice;
-    return fuelcost;
+    double fuelCost = gallonsNeeded * gasPrice;
+    return fuelCost;
 }
 
 // Method 2
